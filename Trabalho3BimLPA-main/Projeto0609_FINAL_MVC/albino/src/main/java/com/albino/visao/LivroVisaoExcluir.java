@@ -187,7 +187,7 @@ public class LivroVisaoExcluir extends JFrame{
     }
     private void acaoExcluir(){
         int codigo = Integer.parseInt(valorCodigo.getText());
-        int input = JOptionPane.showConfirmDialog(this, "Alterar o item ?","Confirme", JOptionPane.OK_CANCEL_OPTION);
+        int input = JOptionPane.showConfirmDialog(this, "Excluir o item ?","Confirme", JOptionPane.OK_CANCEL_OPTION);
         if(input==0){
             GerenteLivrosController.INSTANCE.excluirLivro(codigo);
             JOptionPane.showMessageDialog(this,"Item Excluido com sucesso");
